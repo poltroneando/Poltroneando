@@ -20,13 +20,15 @@
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome-ie7.min.css', 'screen', 'IE 7') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/global.css', 'screen') ?>
-        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/nav.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/global.css', 'screen') ?>
+        <?php 
+//        $this->headLink()->appendStylesheet($this->baseURL() . '/css/nav.css', 'screen') ?>
+        <?php // $this->headLink()->appendStylesheet($this->baseURL() . '/css/responsive.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/bootstrap-responsive.css', 'screen') ?>
 
         <?php echo $this->headLink() ?>
     </head>
-    <body>
+    <body class="body poltroneando">
 
         <div id="TB" class="aqua homepage">
 
@@ -39,7 +41,9 @@
 
                         <input type="submit" id="search-button" value="Busca" />
                     </form>
-                    <a id="open-menu" href="#nav">Menu</a>
+                    <div id="nav">
+                        <li class="home-link selected"><a href="/"></a></li>
+                    </div>
                 </div>
             </div>
         </div>
