@@ -17,6 +17,7 @@
     float: right;
     width: 242px;
     margin-top: 8px;
+    border: none;
 }
 #nav1 #search #s { 
     display: block;
