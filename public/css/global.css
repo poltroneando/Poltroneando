@@ -2,32 +2,23 @@
     margin: 0;
     padding: 0;
 }
-#TB #header {
-    height: 89px;
-    background:#ffa500 url(http://awsassets.panda.org/panda/_skins/pandaorg3/img/header_shadow.png) 0% 100% repeat-x;
-    position:relative;
-    z-index:60;
+#nav1{
+    background-color: #ffa500;
 }
-#TB #header-inner {
-    position: relative;
-    width: 812px;
-    margin: 0 auto;
-    font: 12px/1.2 Helvetica, Arial, sans-serif;
-    padding-top: 10px;
-    padding-left: 168px;
-}
-#TB #logo {
+#nav1 #logo {
     position: absolute;
-    left: 20px;
+    left: 30px;
     top: 0;
     z-index:60;
+    background-color: #000;
 }
-#TB #search {
+
+#nav1 #search {
     float: right;
-    width: 222px;
-    margin-top: 5px;
+    width: 242px;
+    margin-top: 8px;
 }
-#TB #search #s {
+#nav1 #search #s { 
     display: block;
     float: left;
     width: 175px;
@@ -36,10 +27,8 @@
     margin-right: 1px;
     padding: 0 6px;
     border: none;
-    /*background: url(../img/search-bg.png) left top no-repeat;*/
-    background: url(http://awsassets.panda.org/panda/_skins/pandaorg3/sprite-img-smushed.png) left top no-repeat; background-position: 0 -1316px;
 }
-#TB #search #search-button {
+#nav1 #search #search-button {
     display: block;
     overflow: hidden;
     width: 30px;
@@ -48,6 +37,9 @@
     border: none;
     background: url(http://awsassets.panda.org/panda/_skins/pandaorg3/sprite-img-smushed.png) left top no-repeat;
     background-position: 0 -1394px;
+}
+#nav1 #collap-button{
+    background-color: black;
 }
 #TB #nav {
     z-index:40;

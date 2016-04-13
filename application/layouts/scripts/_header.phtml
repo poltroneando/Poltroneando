@@ -9,6 +9,7 @@
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery.js') ?>
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/bootstrap.js') ?>
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery-ui.js') ?>
+        <?php $this->headScript()->appendFile($this->baseURL() . '/js/npm.js') ?>
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery-ui-1.10.2.custom.js') ?>
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/jquery.maskedinput.js') ?>
         <?php $this->headScript()->appendFile($this->baseURL() . '/js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9')) ?>
@@ -17,33 +18,52 @@
 
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/jquery-ui.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/bootstrap.css', 'screen') ?>
-        <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/font-awesome-ie7.min.css', 'screen', 'IE 7') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/global.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/global.css', 'screen') ?>
-        <?php 
-//        $this->headLink()->appendStylesheet($this->baseURL() . '/css/nav.css', 'screen') ?>
-        <?php // $this->headLink()->appendStylesheet($this->baseURL() . '/css/responsive.css', 'screen') ?>
         <?php $this->headLink()->appendStylesheet($this->baseURL() . '/css/bootstrap-responsive.css', 'screen') ?>
 
         <?php echo $this->headLink() ?>
     </head>
     <body class="body poltroneando">
 
-        <div id="TB" class="aqua homepage">
+        <!--<div id="TB" class="aqua homepage">-->
+        <nav class="navbar navbar-default" id="nav1" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navbar-right" data-toogle="collapse" data-target="#elementoCollapse1" id="collap-button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                            
+                    </button>
+                    <a href="/" id="logo"><img src="/images/logo.jpg" width="74" height="74" alt="Poltroneando" /></a>
 
-            <div id="header">
-                <div id="header-inner">
-                    <a href="/" id="logo"><img src="/images/logo.jpg" width="104" height="104" alt="Poltroneando" /></a>
-                    <form  action="/index.cfm" method="get" rel="nofollow" name="formsearch" id="search">
+                </div>
 
-                        <input title="Busca" type="text" value="" name="uGlobalSearch" id="s" />
-
-                        <input type="submit" id="search-button" value="Busca" />
-                    </form>
-                    <div id="nav">
-                        <li class="home-link selected"><a href="/"></a></li>
+                <div class="collapse navbar-collapse" id="elementoCollapse1">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                        <input title="Busca" value="" type="text" class="form-control" placeholder="Busca" id="s">
+                        <input type="submit" id="search-button" value="Ok"/> 
                     </div>
+
+                </form>
                 </div>
             </div>
-        </div>
+
+        </nav>
+        <!--            <div id="header">
+                        <div id="header-inner">
+                            <a href="/" id="logo"><img src="/images/logo.jpg" width="104" height="104" alt="Poltroneando" /></a>
+                            <form  action="/index.cfm" method="get" rel="nofollow" name="formsearch" id="search">
+        
+                                <input title="Busca" type="text" value="" id="s" />
+        
+                                <input type="submit" id="search-button" value="Busca" />
+                            </form>
+                            <div id="nav">
+                                <li class="home-link selected"><a href="/"></a></li>
+                            </div>
+                        </div>
+                    </div>-->
+        <!--</div>-->
