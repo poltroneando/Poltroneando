@@ -1,0 +1,18 @@
+<br /><br />
+<div id="view-content">
+    <h4> Países </h4>
+    
+    <?php if(count($this->listaPaises)){ ?>
+    <table style="width: 100%">
+        <tr>
+            <th>Nome</th>
+        </tr>
+        <?php foreach ($this->listaPaises as $pais) { ?>
+        <tr>
+            <td><?php echo $pais["nome_pais"]; ?></td>
+        </tr>
+
+    <?php } ?>
+    </table>
+<?php } ?>    
+</div>
