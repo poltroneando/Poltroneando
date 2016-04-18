@@ -6,10 +6,12 @@
     <table style="width: 100%">
         <tr>
             <th>Nome</th>
+            <th>Sigla</th> 
         </tr>
         <?php foreach ($this->listaPaises as $pais) { ?>
         <tr>
             <td><?php echo $pais["nome_pais"]; ?></td>
+            <td><?php echo $pais["sigla"]; ?></td>
         </tr>
 
     <?php } ?>
