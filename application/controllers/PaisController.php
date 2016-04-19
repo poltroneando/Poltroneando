@@ -5,7 +5,9 @@ class PaisController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+        if ( !Zend_Auth::getInstance()->hasIdentity() ) {
+		return $this->_helper->redirector->goToRoute( array('controller' => 'auth'), null, true);
+	}
     }
 
     public function indexAction()
