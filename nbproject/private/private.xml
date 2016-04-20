@@ -3,20 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Poltroneando/application/views/scripts/auth/login.phtml</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/forms/Login.php</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/public/js/bootstrap.js</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/public/js/npm.js</file>
+            <file>file:/C:/xampp/htdocs/Poltroneando/application/Bootstrap.php</file>
+            <file>file:/C:/xampp/htdocs/Poltroneando/application/views/scripts/index/index.phtml</file>
+            <file>file:/C:/xampp/htdocs/Poltroneando/docs/README.txt</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/controllers/AuthController.php</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/views/scripts/pais/index.phtml</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/layouts/scripts/_header.phtml</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/public/css/global.css</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/application/controllers/PaisController.php</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/layouts/scripts/layout.phtml</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/application/Bootstrap.php</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/application/layouts/scripts/_footer.phtml</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/docs/README.txt</file>
-            <file>file:/C:/xampp/htdocs/Poltroneando/application/configs/application.ini</file>
         </group>
     </open-files>
 </project-private>
