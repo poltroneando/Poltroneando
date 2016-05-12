@@ -1,22 +1,28 @@
-<br /><br />
-<div id="view-content">
-    <h2>Logado</h2>
-    <p><a href="<?php echo $this->url(array('controller' => 'auth', 'action' => 'logout'), null, true); ?>">Efetuar logout</a></p>
-    <h4> Países </h4>
+<?php echo $this->render('_header.phtml') ?>
+<div class="content">
+    <div class="container">
+        <br /><br />
+        <div id="view-content">
+            <h2>Logado</h2>
+            <p><a href="<?php echo $this->url(array('controller' => 'auth', 'action' => 'logout'), null, true); ?>">Efetuar logout</a></p>
+            <h4> Países </h4>
 
-    <?php if (count($this->listaPaises)) { ?>
-        <table style="width: 100%">
-            <tr>
-                <th>Nome</th>
-                <th>Sigla</th> 
-            </tr>
-            <?php foreach ($this->listaPaises as $pais) { ?>
-                <tr>
-                    <td><?php echo $pais["nome_pais"]; ?></td>
-                    <td><?php echo $pais["sigla"]; ?></td>
-                </tr>
+            <?php if (count($this->listaPaises)) { ?>
+                <table style="width: 100%">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sigla</th> 
+                    </tr>
+                    <?php foreach ($this->listaPaises as $pais) { ?>
+                        <tr>
+                            <td><?php echo $pais["nome_pais"]; ?></td>
+                            <td><?php echo $pais["sigla"]; ?></td>
+                        </tr>
 
-            <?php } ?>
-        </table>
-    <?php } ?>    
+                    <?php } ?>
+                </table>
+            <?php } ?>    
+        </div>
+    </div>
 </div>
+<?php echo $this->render('_footer.phtml') ?>

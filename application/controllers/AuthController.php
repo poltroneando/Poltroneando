@@ -8,9 +8,13 @@ class AuthController extends Zend_Controller_Action {
 
     public function indexAction() {
  	return $this->_helper->redirector('login');
+        $usuario = Zend_Auth::getInstance()->getIdentity();
+	$this->view->usuario = $usuario;
     }
 
     public function loginAction() {
+        $usuario = Zend_Auth::getInstance()->getIdentity();
+	$this->view->usuario = $usuario;
         $this->_flashMessenger = $this->_helper->getHelper('FlashMessenger');
         $this->view->messages = $this->_flashMessenger->getMessages();
         $form = new Form_Login();
