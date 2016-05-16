@@ -1,13 +1,9 @@
-<?php // echo $this->render('_header.phtml') ?>
-<!--<div class="content">-->
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 img-login">
-                <img src="/images/logo.png" class="img-responsive" />
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 img-login">
+            <img src="/images/logo.png" class="img-responsive" />
         </div>
-        <?php echo ( sizeof($this->messages) > 0 ) ? $this->messages[0] : ""; ?>
-        <?php echo $this->form; ?>
     </div>
-<!--</div>-->
-<?php // echo $this->render('_footer.phtml') ?>
+    <?php echo ( sizeof($this->messages) > 0 ) ? $this->messages[0] : ""; ?>
+    <?php echo $this->form; ?>
+</div>
