@@ -5,15 +5,25 @@
 .bck-img {
     background-color: #ffa500;
 }
+.navbar-toggle-perfil{
+    background-color: black;
+    height: 32px;
+}
+.navbar-toggle-perfil .glyphicon{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 0px;
+}
 #nav1{
     background-color: #ffa500;
 }
 #nav1 #logo {
-    position: absolute;
-    left: 30px;
+    position: relative;
+    /*left: 10px;*/
     top: 0;
     z-index:60;
-    background-color: #000;
+    background-color: #ffa500;
 }
 
 #nav1 #search {
@@ -44,6 +54,12 @@
 }
 #nav1 #collap-button{
     background-color: black;
+    float: left;
+    margin-left: 15px;
+}
+#nav1 #collapse-perfil{
+    background-color: black;
+
 }
 #TB #nav {
     z-index:40;
@@ -170,21 +186,46 @@
 .desktop{
     display:block;
 }
-
-@media (max-width: 1008px) {
-    #TB #nav,
-    #TB .footer .container {
-        width: auto;
-        height: auto;
-        float: none;
-        clear: both;
-    }
-    #TB .footer .container {
-        background: url(http://awsassets.wwf.org.au/panda/_skins/pandaorg3/img/panda.png) left top no-repeat!important;
-    }
-
-
-    #TB.aqua{
-        background: none;
-    }
+#topo {
+    background: #262626;
+    padding: 0px 4px;
+}
+#topo a {
+    color: #f0f0f0;
+    font-size: 11px;
+    border-left: 1px solid #f0f0f0;
+    padding: 0px 6px; /* padding: 0px 3px 0 6px; */
+    text-decoration:none;
+}
+#topo li {
+    padding: 10px 0;
+}
+#topo .submenu li {
+    padding: 0;
+    margin-right: 0;
+}
+#topo li:first-child a {
+    border: 0;
+}
+#topo .submenu a {
+    border: 0;
+    padding: 5px;
+    display: block;
+    padding-right: 35px;
+}
+#topo .direita {
+    margin-top: -2px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    z-index: 1;
+}
+.submenu li{
+    display: block;
+}
+nav li, nav ul {
+    display: inline-block;
+    box-sizing: border-box;
 }

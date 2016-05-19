@@ -1,0 +1,40 @@
+@media (max-width: 1000px) {
+    #TB #nav,
+    #TB .footer .container {
+        width: auto;
+        height: auto;
+        float: none;
+        clear: both;
+    }
+    #TB .footer .container {
+        background: url(http://awsassets.wwf.org.au/panda/_skins/pandaorg3/img/panda.png) left top no-repeat!important;
+    }
+    /* faixa superior*/
+    #topo {
+        padding: 6px 13px;
+    }
+    #topo nav>ul {
+        position: absolute;
+        display: none;
+        background: #262626;
+        left: 0;
+        width: 40%;
+        z-index: 999;
+    }
+    #topo li {
+        padding: 0;
+    }
+
+    #TB.aqua{
+        background: none;
+    }
+}
+@media(min-width: 1001px){
+    #topo .submenu{
+        top: 31px;
+    }
+    #topo .sub-submenu {
+        margin-top: -22px;
+    }
+
+}
