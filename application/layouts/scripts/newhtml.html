@@ -1,0 +1,239 @@
+<div id="topo-sec">
+    <nav class="direita">
+        <a class="mobile direita"><img src="arquivos/responsivo/img/config-menu.png" alt=""></a>
+        <ul>
+            <li><img src="images/vip/0.gif" alt="VIP USER BRONZE" border="0" class="icon" height='12'><a>Hordanek</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="./?view=user&nick=Hordanek">Meu Perfil</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/edita">Alterar Perfil</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/bloquer">Bloquear Usu&aacute;rios</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/pedidos">Pedidos em Lojas Virtuais</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/valteranick">Alterar meu nick</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/vcompras">Planos VIP Ativos</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/vhistorico">Hist&oacute;rico de Saldos</a>
+                    </li>
+                    <li>
+                        <a href="./?view=painel/bloquearCadastro">Bloquear o seu Cadastro</a>
+                    </li>
+                </ul>				            
+            </li>
+            <li><a href="./login.php?l=y&id=e7025345">Deslogar</a></li>
+        </ul>
+    </nav>
+    <nav class="">
+
+        <a id="notif" class="notificacoes off" onclick="notifLoad();"></a>
+        <div id="notificacoes">
+            <div class="notif-header">
+                <b>Notifica&ccedil;&otilde;es</b>
+                <div class="direita">
+                    <a href="#" onclick="notifReadAll();">Marcar todas como lidas</a>
+                    <a href="./?view=painel/notif_seg">Tudo que Acompanho</a>
+                </div>
+            </div>
+            <div id="notifPopupHtml">
+            </div>
+            <div id="notifPopupLoading">
+                <center><img src="images/ecom/loading.gif" width="16" height="16" title="Loading.."></center>
+            </div>
+            <div class="notif-rodape b">
+                <a href="./?view=painel/notif">Ver todas notifica&ccedil;&otilde;es</a>
+                <a href="./?view=painel/notif_bloq">Configurar notifica&ccedil;&otilde;es</a>
+            </div>
+        </div>
+
+        <a class="mobile"><img src="arquivos/responsivo/img/user-menu.png" alt=""></a>
+        <ul>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;0 pmsgs</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=painel/pmsg/mms'>Enviar Mensagem</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/pmsg/home'>Caixa de Entrada</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/pmsg/enviadas'>Enviadas</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/pmsg/lixeira'>Lixeira</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/bloquer'>Bloquear Usu&aacute;rio</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/pmsg/contatos'>Lista de Contatos</a>
+                    </li>
+                    <li>
+                        <a href='././?view=painel/pmsg/gpastas'>Gerenciar Pastas</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Negocia&ccedil;&otilde;es</a>
+                <ul class='submenu'>
+                    <li>
+                        <a class='com-sub' href='#'>Negocia&ccedil;&otilde;es</a>
+                        <ul class='sub-submenu'>
+                            <li>
+                                <a href='././?view=ref2/central'>Minhas Negocia&ccedil;&otilde;es</a>
+                            </li>
+                            <li>
+                                <a href='././?view=ref2/nabrir'>Abrir Negocia&ccedil;&atilde;o</a>
+                            </li>
+                            <li>
+                                <a href='././?view=ref2/financeiro'>Relat&oacute;rio Financeiro</a>
+                            </li>
+                            <li>
+                                <a href='././?view=ref2/npainelcontrole'>Configura&ccedil;&otilde;es</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class='com-sub' href='#'>Leil&otilde;es</a>
+                        <ul class='sub-submenu'>
+                            <li>
+                                <a href='././?view=leilao/painel&meusLeiloes=1#shw'>Meus Leil&otilde;es</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/postar'>Criar novo Leil&atilde;o</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/painel&ganhos=1#shw'>Leil&otilde;es Ganhos</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/painel&deiLance=1#shw'>Leil&otilde;es que dei Lance</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/painel&meusFav=1#shw'>Leil&otilde;es Acompanhados</a>
+                            </li>
+                            <li>
+                                <a href='././?view=ref2/nlpainel'>Leil&otilde;es Vendidos Aguard. Neg.</a>
+                            </li>
+                            <li>
+                                <a href='././?view=ref2/nlpainelvenc'>Leil&otilde;es Comprados Aguard. Neg.</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/vltopo'>Leil&otilde;es Superiores</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/vlcor'>Leil&otilde;es Coloridos</a>
+                            </li>
+                            <li>
+                                <a href='././?view=leilao/financeiro'>Relat&oacute;rio de Leil&otilde;es</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class='com-sub' href='#'>Baloeiros</a>
+                    </li>
+                    <li><a class='com-sub' href='#'>Minha Loja Virtual</a>
+                        <ul class='sub-submenu'>
+                            <li>
+                                <a href='././?view=ecom/minhaLoja'>Criar minha Loja Virtual</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Meus Decks</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=decks/meus'>&nbsp;Meus Decks</a>
+                    </li>
+                    <li>
+                        <a href='././?view=decks/deck&newDeck=1'>Criar novo Deck</a>
+                    </li>
+                    <li>
+                        <a href='././?view=decks/favoritos'>Meus Favoritos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Meu Blog</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=blog/view'>Meu Blog</a>
+                    </li>
+                    <li>
+                        <a href='././?view=blog/post'>Postar no meu Blog</a>
+                    </li>
+                    <li>
+                        <a href='././?view=blog/favoritos'>Meus Favoritos</a>
+                    </li>
+                    <li>
+                        <a href='././?view=blog/autores'>Autores do meu Blog</a>
+                    </li>
+                    <li>
+                        <a href='././?view=blog/config'>Configura&ccedil;&otilde;es</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Meu Fotolog</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=fotolog/view'>Meu Fotolog</a>
+                    </li>
+                    <li>
+                        <a href='././?view=fotolog/upload'>Upload</a>
+                    </li>
+                    <li>
+                        <a href='././?view=fotolog/historico'>Minhas Fotos</a>
+                    </li>
+                    <li>
+                        <a href='././?view=fotolog/favoritos'>Meus Favoritos</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Meu F&oacute;rum</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=forum/topico&meus=1'>Meu Conte&uacute;do</a>
+                    </li>
+                    <li>
+                        <a href='././?view=forum/topico&vistos=1'>T&oacute;picos Visualizados</a>
+                    </li>
+                    <li>
+                        <a href='././?view=forum/forum&local=favoritos'>Meus Favoritos</a>
+                    </li>
+                    <li>
+                        <a href='././?view=forum/forum&local=privado&acesso=1'>Se&ccedil;&otilde;es com Acesso</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class='com-sub' href='#'>&nbsp;Minhas Lojas</a>
+                <ul class='submenu'>
+                    <li>
+                        <a href='././?view=torneios/store&txt_loja_favorita=72839'>Favoritas</a>
+                    </li>
+                    <li>
+                        <a href='././?view=torneios/torneio&txt_participou=1'>Torneios que Joguei</a>
+                    </li>
+                    <li>
+                        <a href='././decks/registrationSheet.php'>Imprimir Ficha de Inscri&ccedil;&atilde;o</a>
+                    </li>
+                    <li>
+                        <a href='././?view=torneios/newstore'>Cadastrar Loja ou Organizador</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

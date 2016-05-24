@@ -1,13 +1,10 @@
+a.mobile{
+    display: none !important;
+    border-left: 0 !important;
+}
 @media (max-width: 1000px) {
-    #TB #nav,
-    #TB .footer .container {
-        width: auto;
-        height: auto;
-        float: none;
-        clear: both;
-    }
-    #TB .footer .container {
-        background: url(http://awsassets.wwf.org.au/panda/_skins/pandaorg3/img/panda.png) left top no-repeat!important;
+    #container-principal {
+        position: relative;
     }
     /* faixa superior*/
     #topo {
@@ -24,10 +21,69 @@
     #topo li {
         padding: 0;
     }
-
-    #TB.aqua{
+    #topo li:hover{
         background: none;
     }
+    #topo a{
+        display: block;
+    }
+    #topo .direita{
+        margin-top: 0;
+    }
+    .submenu{
+        position: relative;
+        border: 0;
+    }
+    .submenu a {
+        padding:2px 25px !important;
+    }
+    a.mobile {
+        display: inline-block !important;
+    }
+    a.mobile.direita+ul {
+        top: 38px;
+        left: auto !important;
+        right: 0;
+    }
+    h1{
+        float: none;
+    }
+    nav.aberto:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        left: 0;
+        top: 38px;
+        bottom: 0;
+    }
+    nav.aberto>ul {
+        display: block !important;
+    }
+    nav.aberto>ul li {
+        display: block;
+    }
+    nav.aberto>ul li a {
+        border: 0 !important;
+        font-size: 16px !important;
+        line-height: 34px;
+    }
+    a.menu-ativo{
+        background: #333;
+    }
+    #topo .submenu a.menu-ativo.com-sub:after {
+        content: url('../img/white-next.png');
+        margin: 0px -13px 0 17px;
+        padding-right: 10px;
+    }
+    .submenu.menu-ativo{
+        display: block !important;
+    }
+/*    li:hover .submenu{
+        display: none;
+    }*/
+
 }
 @media(min-width: 1001px){
     #topo .submenu{
@@ -37,4 +93,10 @@
         margin-top: -22px;
     }
 
+}
+
+@media(max-width: 645px){
+    #topo nav>ul{
+        width: 70%;
+    }
 }

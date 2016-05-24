@@ -1,10 +1,18 @@
 .body {
     margin: 0;
     padding: 0;
+    font-size: 12px;
 }
 .bck-img {
     background-color: #ffa500;
 }
+#container-principal {
+    max-width: 1100px;
+    background: #eee;
+    margin: 0 auto;
+    display: block;
+}
+
 .navbar-toggle-perfil{
     background-color: black;
     height: 32px;
@@ -61,125 +69,6 @@
     background-color: black;
 
 }
-#TB #nav {
-    z-index:40;
-    position: absolute;
-    left: 168px;
-    top: 53px;
-    width: 812px;
-    height: 33px;
-    height: 33px;
-    font: 21px/27px WWFRegular, Arial, sans-serif;
-}
-#TB #nav li {
-    display: block;
-    float: left;
-    height: 33px;
-    list-style: none;
-}
-#TB #nav li.right{
-    border-right:0;
-    float:right;
-    text-transform:uppercase;
-}
-#TB #nav li.highlight{
-    background-color:#F29724;
-}
-#TB #nav li.right.selected, #TB #nav li.right.hover{
-    background-color:transparent;
-}
-#TB #nav li.inline{
-    padding:0px 10px;
-    font: 12px/1.2 Helvetica, Arial, sans-serif;
-    color:#CCC;
-    line-height: 33px;
-}
-
-#TB #nav li a {
-    letter-spacing: 0.5px;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
-    display: block;
-    height: 33px;
-    padding: 0 25px 0 9px;
-    background: url(http://awsassets.panda.org/panda/_skins/pandaorg3/img/main-nav-arrow.png) right 14px no-repeat;
-}
-#TB #nav .home-link a {
-    width: 31px;
-    padding: 0;
-    text-indent: -9999px;
-    outline: none;
-    /*background: url(../img/home-icon.png) 7px 7px no-repeat;*/
-    background: url(http://awsassets.panda.org/panda/_skins/pandaorg3/sprite-img-smushed.png) 0 0 no-repeat; background-position: 7px -741px;
-}
-#TB #nav li.inline a{
-    border:0 !important;
-    text-shadow:none;
-    text-transform:none;
-    letter-spacing:0;
-    height:auto;
-    padding:0 5px;
-    display:inline;
-    background:none;
-    font: 12px/1.2 Helvetica, Arial, sans-serif;
-}
-#TB #nav li.inline a:hover{
-    color:white;
-    background-color:transparent;
-}
-#TB #nav li ul {
-    border:1px solid #CCC;
-    display:none;
-    width:200px;
-    padding:0 7px 7px 7px;
-    position:absolute;
-    z-index:50;
-    background-color:white;
-    font: 12px/1.2 Helvetica, Arial, sans-serif;
-    -webkit-box-shadow: 0px 0px 5px #000;
-    -moz-box-shadow: 0px 0px 5px #000;
-    box-shadow: 0px 0px 5px #000;
-}
-#TB #nav li.hover ul{
-    display:block;
-}
-#TB #nav li.right ul{
-    right:0;
-}
-#TB #nav li ul li{
-    text-transform:none;
-    border-right:0 !important;
-    border-left:0;
-    border-bottom:1px solid #CCC;
-    height:auto;
-    float:none;
-}
-#TB #nav li ul a{
-    border:0 !important;
-    padding:5px 3px;
-    height:auto;
-    color: #006262;
-    text-shadow:none;
-    background:white none;
-    letter-spacing:0;
-}
-#TB #nav li ul a:hover{
-    background-color:#E9E8D8 !important;
-}
-#TB .row {
-    margin-bottom: 21px;
-    zoom: 1;
-}
-#TB #tertiary-content .footer, #TB #tertiary-content .sitemap {
-    background-color: #f4f3ec;
-}
-#TB .footer .container {
-    width: 868px;
-    height: 144px;
-    padding-left: 112px;
-    background: url(http://awsassets.panda.org/panda/_skins/pandaorg3/sprite-img-smushed.png) left top no-repeat; background-position: 0 -1060px; 
-}
-
 .mobile{
     display:none;
 }
@@ -200,6 +89,10 @@
 #topo li {
     padding: 10px 0;
 }
+#topo li:hover{
+    margin-right: 3px;
+    padding-right: 3px;
+}
 #topo .submenu li {
     padding: 0;
     margin-right: 0;
@@ -213,6 +106,13 @@
     display: block;
     padding-right: 35px;
 }
+li:hover submenu, .submenu li:hover .sub-submenu{
+    display: none;
+}
+.direita {
+    float: right;
+    display: inline;
+}
 #topo .direita {
     margin-top: -2px;
 }
@@ -225,7 +125,26 @@
 .submenu li{
     display: block;
 }
-nav li, nav ul {
+.submenu a.com-sub:after{
+    width: 12px;
+    height: 12px;
+    margin: 0px -13px 0 45px;
+    padding-right: 5px;
+    position: absolute;
+    right: 15px;
+}
+a {
+    color: #000;
+}
+header {
+    z-index: 1;
+}
+
+h1 {
+    float: left;
+}
+
+h1, nav li, nav ul {
     display: inline-block;
     box-sizing: border-box;
 }
