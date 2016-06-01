@@ -20,23 +20,27 @@
                     <nav class="direita">
                         <a class="mobile direita"><img src="/images/user-menu.png" alt=""></a>                        
                         <ul>
-                            <li><a><?php
-                                    if ($this->usuario != null) {
+                            <li><?php
+                                if ($this->usuario != null) {
+                                    ?><a><?php
                                         echo $this->usuario->nome;
-                                      ?>
-                                    <span class="caret"></span>
-                                    <?php
-                                    }
-                                    ?></a>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="<?php
-                                        if ($this->usuario != null) {
+                                        ?>
+                                        <span class="caret"></span></a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="<?php
                                             echo $this->url(array('controller' => 'auth', 'action' => 'logout'), null, true);
-                                        }
-                                        ?>">Logout</a>
-                                    </li>
-                                </ul>
+                                            ?>">Logout</a>
+                                        </li>
+                                    </ul>
+                                <?php } else {
+                                    ?>
+                                    <a href="<?php
+                                    echo $this->url(array('controller' => 'auth'), null, true);
+                                    ?>">Login</a>
+                                       <?php
+                                   }
+                                   ?>
                             </li>
                             <!--<li><a>teste</a></li>-->
                         </ul>

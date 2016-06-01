@@ -8,8 +8,14 @@ class AuthController extends Zend_Controller_Action {
 
     public function indexAction() {
  	return $this->_helper->redirector('login');
-        $usuario = Zend_Auth::getInstance()->getIdentity();
-	$this->view->usuario = $usuario;
+        if (Zend_Auth::getInstance()->hasIdentity()) {
+            $usuario = Zend_Auth::getInstance()->getIdentity();
+            $this->view->logado = 1;
+            $this->view->usuario = $usuario;
+        } else {
+            $this->view->usuario = NULL;
+            $this->view->logado = 0;
+        }
     }
 
     public function loginAction() {
@@ -48,7 +54,7 @@ class AuthController extends Zend_Controller_Action {
                     $storage = $auth->getStorage();
                     $storage->write($info);
                     //Redireciona para o Controller protegido
-                    return $this->_helper->redirector->goToRoute(array('controller' => 'pais'), null, true);
+                    return $this->_helper->redirector->goToRoute(array('controller' => 'index'), null, true);
                 } else {
                     //Dados inválidos
                     $this->_helper->FlashMessenger('Usuário ou senha inválidos!');
@@ -64,7 +70,7 @@ class AuthController extends Zend_Controller_Action {
     public function logoutAction() {
         $auth = Zend_Auth::getInstance();
         $auth->clearIdentity();
-        return $this->_helper->redirector('index');
+        return $this->_helper->redirector->goToRoute(array('controller' => 'index'), null, true);
     }
 
 }
