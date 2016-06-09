@@ -6,7 +6,7 @@ class Form_Login extends Zend_Form {
         $this->setName('login');
 
         $login = new Zend_Form_Element_Text('email');
-        $login->setLabel('Login:')
+        $login->setLabel('Email:')
                 ->setRequired(true)
                 ->addFilter('StripTags')
                 ->addFilter('StringTrim')
