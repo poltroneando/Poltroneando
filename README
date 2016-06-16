@@ -1,0 +1,33 @@
+
+
+Link do repositório no GitHub: https://github.com/poltroneando/Poltroneando
+
+Detalhes da aplicação
+
+    Versão: 0.5.5
+    Controle de versão: GIT (Github)
+    Repositório de Versionamento: https://github.com/poltroneando/Poltroneando
+    IDE: NetBeans
+    Banco de dados: PostgreSql
+
+PROBLEMAS/LIMITAÇÕES CONHECIDAS
+
+Implementação do Design (CSS);
+Problemas com JavaScript;
+Impelementação do Webservice de mineração de notícias esta defasada pois estamos estudando o TCC que existe sobre ele, como o
+mesmo é programado em Java, econtramos problemas de desenvolvê-lo. Em decorrência disto não criamos a página de notícias e os
+cadastros de celebridades.
+
+Entrega - 10/06
+
+    Modelagem e criação do Banco de Dados;
+    Definição de Layout junto a turma de Design;
+    
+    Início da implementação do WebService de extração de dados;
+    
+    Implementação do Controle de sessão;
+    Implementação do Cadastro de Usuário;
+    Implementação da Barra de Menu Supeiror;
+    Definição e adaptação do Lyout mobile;
+    
+    Criação do servidor próprio.
