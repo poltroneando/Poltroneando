@@ -15,8 +15,10 @@
             <file>file:/C:/xampp/htdocs/Poltroneando/application/models/Usuario.php</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/models/Paises.php</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/public/css/global-responsive.css</file>
+            <file>file:/C:/xampp/htdocs/Poltroneando/application/Bootstrap.php</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/layouts/scripts/_footer.phtml</file>
             <file>file:/C:/xampp/htdocs/Poltroneando/application/views/scripts/auth/index.phtml</file>
+            <file>file:/C:/xampp/htdocs/Poltroneando/application/configs/application.ini</file>
         </group>
     </open-files>
 </project-private>
